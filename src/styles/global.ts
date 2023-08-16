@@ -16,5 +16,6 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Baloo 2', 'Roboto', sans-serif;
         font-size: 1rem;
         line-height: 130%;
+        background: ${(props) => props.theme.background};
     }
 `
