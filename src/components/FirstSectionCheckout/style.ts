@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const FirstSection = styled.section`
+export const FirstSection = styled.main`
   max-width: 40rem;
 
   h1 {
@@ -144,6 +144,8 @@ export const MethodPayContainer = styled.div`
   width: 100%;
   display: flex !important;
   justify-content: space-between;
+  gap: 0.2rem;
+  cursor: pointer;
 
   div {
     display: flex;
@@ -165,5 +167,9 @@ export const MethodPayContainer = styled.div`
     font-style: normal !important;
     font-weight: 400 !important;
     text-transform: uppercase !important;
+  }
+
+  .purpleLight {
+    background: ${(props) => props.theme.purpleLight};
   }
 `

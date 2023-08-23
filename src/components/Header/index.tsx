@@ -1,21 +1,27 @@
-import { HeaderContainer, LocalContainer, StyledShoppingCar } from './style'
+import {
+  HeaderContainer,
+  LocalContainer,
+  StyledShoppingCar,
+  StyledLink,
+} from './style'
 import logo from '../../assets/Logo.svg'
 import { MapPin, ShoppingCart } from '@phosphor-icons/react'
-import { Link } from 'react-router-dom'
 
 export function Header() {
   return (
     <HeaderContainer>
-      <img src={logo} alt="Coffee" />
+      <StyledLink to="/">
+        <img src={logo} alt="Coffee" />
+      </StyledLink>
       <div>
         <LocalContainer>
           <MapPin />
           <p>Porto Alegre, RS</p>
         </LocalContainer>
         <StyledShoppingCar>
-          <Link to="/checkout">
+          <StyledLink to="/checkout">
             <ShoppingCart />
-          </Link>
+          </StyledLink>
         </StyledShoppingCar>
       </div>
     </HeaderContainer>
